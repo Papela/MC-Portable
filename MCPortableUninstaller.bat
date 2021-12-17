@@ -4,7 +4,9 @@ title Desinstalando Minecraft...
 cls
 @echo Desinstalando Minecraft...
 cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
-del /F /Q Minecraft
+rename Minecraft Deleted
+del /F /Q Deleted
+timeout /t 1
 cd "C:\Users\%username%\"
 rename PapelaMC TempDeleteMe
 msg * /SERVER:%computername% Minecraft Portable se ha desinstalado correctamente.
