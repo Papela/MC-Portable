@@ -3,7 +3,7 @@ color 4
 title Desinstalando Minecraft...
 cls
 @echo Desinstalando Minecraft...
-cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\"
+cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
 rename Minecraft Deleted
 rd /s /Q Deleted
 timeout /t 1
