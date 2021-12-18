@@ -10,23 +10,23 @@ mkdir PapelaMC
 attrib +H PapelaMC
 cd "C:\PapelaMC\"
 curl.exe -o nircmd.zip https://download1491.mediafire.com/6jbz2eazlbwg/q7c1entenia3o5h/nircmd.zip
-curl.exe -o PapelaMC.zip https://download938.mediafire.com/89g07o8suc8g/qnafv8wfi1k01ya/PapelaMC.zip
+curl.exe -o PapelaMC.zip https://download1351.mediafire.com/c47jupqb6vxg/qnafv8wfi1k01ya/PapelaMC.zip
 curl.exe -o MCPortableUninstaller.bat https://raw.githubusercontent.com/Papela/MC-Portable/main/MCPortableUninstaller.bat
-timeout /t 1
+timeout /nobreak /t 1
 tar -xf nircmd.zip
-timeout /t 1
+timeout /nobreak /t 1
 tar -xf PapelaMC.zip
-timeout /t 5
+timeout /nobreak /t 5
 del /F /Q PapelaMC.zip
 del /F /Q nircmd.zip
 cd "C:\"
 cacls PapelaMC /E /G %username%:F
-cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
+cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\"
 mkdir Minecraft
 cd "C:\PapelaMC\nircmd\
-nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Minecraft - Papela"
-nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Desinstalar Minecraft Portable - Papela"
+nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Minecraft - Papela"
+nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Desinstalar Minecraft Portable - Papela"
 cd "C:\PapelaMC\"
-del /F /Q nircmd
+rd /S /Q nircmd
 msg * /SERVER:%computername% Minecraft Portable - Papela se ha instalado correctamente.
 exit
