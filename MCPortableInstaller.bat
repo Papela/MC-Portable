@@ -30,4 +30,5 @@ nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\Users\%username%
 cd "C:\PapelaMC\"
 rd /S /Q nircmd
 msg * /SERVER:%computername% Minecraft Portable - Papela se ha instalado correctamente.
+start "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe"
 exit
