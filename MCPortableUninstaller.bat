@@ -7,8 +7,9 @@ cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
 rename Minecraft Deleted
 del /F /Q Deleted
 timeout /t 1
-cd "C:\Users\%username%\"
+cd "C:\"
 rename PapelaMC TempDeleteMe
-msg * /SERVER:%computername% Minecraft Portable se ha desinstalado correctamente.
+timeout /t 1
 del /F /Q TempDeleteMe
+msg * /SERVER:%computername% Minecraft Portable se ha desinstalado correctamente.
 exit
