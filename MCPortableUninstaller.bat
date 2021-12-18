@@ -11,3 +11,4 @@ cd "C:\Users\%username%\"
 rename PapelaMC TempDeleteMe
 msg * /SERVER:%computername% Minecraft Portable se ha desinstalado correctamente.
 del /F /Q TempDeleteMe
+exit
