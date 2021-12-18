@@ -27,8 +27,10 @@ cd "C:\PapelaMC\nircmd\
 nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Minecraft - Papela"
 nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\Users\%username%\Desktop\" "MCP"
 nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Desinstalar Minecraft Portable - Papela"
+nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\PapelaMC\PapelaMC\" "Desinstalar Minecraft Portable - Papela"
 cd "C:\PapelaMC\"
 rd /S /Q nircmd
 msg * /SERVER:%computername% Minecraft Portable - Papela se ha instalado correctamente.
-start "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe"
+cd "C:\Users\Etxea\Desktop\"
+start MCP.lnk
 exit
