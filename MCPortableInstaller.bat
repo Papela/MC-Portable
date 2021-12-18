@@ -21,11 +21,12 @@ del /F /Q PapelaMC.zip
 del /F /Q nircmd.zip
 cd "C:\"
 cacls PapelaMC /E /G %username%:F
-cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\"
+cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
 mkdir Minecraft
 cd "C:\PapelaMC\nircmd\
-nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Minecraft - Papela"
-nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Desinstalar Minecraft Portable - Papela"
+nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Minecraft - Papela"
+nircmd.exe shortcut "C:\PapelaMC\PapelaMC\MultiMinecraft_Deluxe.exe" "C:\Users\%username%\Desktop\" "MCP"
+nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Minecraft\" "Desinstalar Minecraft Portable - Papela"
 cd "C:\PapelaMC\"
 rd /S /Q nircmd
 msg * /SERVER:%computername% Minecraft Portable - Papela se ha instalado correctamente.
