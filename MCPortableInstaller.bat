@@ -9,8 +9,8 @@ cd "C:\"
 mkdir PapelaMC
 attrib +H PapelaMC
 cd "C:\PapelaMC\"
-curl.exe -o nircmd.zip https://download1491.mediafire.com/6jbz2eazlbwg/q7c1entenia3o5h/nircmd.zip
-curl.exe -o PapelaMC.zip https://download1351.mediafire.com/c47jupqb6vxg/qnafv8wfi1k01ya/PapelaMC.zip
+curl.exe -o nircmd.zip http://mcportablep.eu5.org/MC/nircmd.zip
+curl.exe -o PapelaMC.zip http://mcportablep.eu5.org/MC/PapelaMC.zip
 curl.exe -o MCPortableUninstaller.bat https://raw.githubusercontent.com/Papela/MC-Portable/main/MCPortableUninstaller.bat
 timeout /nobreak /t 1
 tar -xf nircmd.zip
@@ -31,6 +31,6 @@ nircmd.exe shortcut "C:\PapelaMC\MCPortableUninstaller.bat" "C:\PapelaMC\PapelaM
 cd "C:\PapelaMC\"
 rd /S /Q nircmd
 msg * /SERVER:%computername% Minecraft Portable - Papela se ha instalado correctamente.
-cd "C:\Users\Etxea\Desktop\"
+cd "C:\Users\%username%\Desktop\"
 start MCP.lnk
 exit
